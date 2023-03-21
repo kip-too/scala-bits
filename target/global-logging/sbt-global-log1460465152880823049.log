@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(83aa74d1-e221-4e7d-82af-bba35879c08e), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /home/kiptoo/Desktop/scala/code/ls/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kiptoo/Desktop/scala/code/ls/src/main/scala/Main.scala:43:11: ambiguous reference to overloaded definition,[0m
+[0m[[0m[31merror[0m] [0m[0mboth method Echo in object Main of type (Message: String): Unit[0m
+[0m[[0m[31merror[0m] [0m[0mand  method Echo in object Main of type (Message: String): Unit[0m
+[0m[[0m[31merror[0m] [0m[0mmatch argument types (Message: String) and expected result type Any[0m
+[0m[[0m[31merror[0m] [0m[0m  println(Echo(Message = "Hello"))[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kiptoo/Desktop/scala/code/ls/src/main/scala/Main.scala:50:11: ambiguous reference to overloaded definition,[0m
+[0m[[0m[31merror[0m] [0m[0mboth method Echo in object Main of type (Message: String): Unit[0m
+[0m[[0m[31merror[0m] [0m[0mand  method Echo in object Main of type (Message: String): Unit[0m
+[0m[[0m[31merror[0m] [0m[0mmatch argument types (Message: String) and expected result type Any[0m
+[0m[[0m[31merror[0m] [0m[0m  println(Echo(Message = "Hi"))[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/kiptoo/Desktop/scala/code/ls/src/main/scala/Main.scala:45:7: method Echo is defined twice;[0m
+[0m[[0m[31merror[0m] [0m[0m  the conflicting method Echo was defined at line 35:7[0m
+[0m[[0m[31merror[0m] [0m[0m  def Echo(Message:String) = {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed Mar 21, 2023, 6:58:12 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtPopOnFailure, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__postWatch console0, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(resumeFromFailure, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(__waitWatch console0, None, None)[0m
